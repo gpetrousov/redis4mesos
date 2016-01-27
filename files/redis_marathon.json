@@ -1,0 +1,17 @@
+{
+	"_Author": "Ioannis Petrousov",
+	"_Email": "petrousov@gmail.com",
+	"id": "redis.marathon", 
+	"cmd": "bash /opt/bootstrap.sh",
+	"container": {
+		"type": "DOCKER",
+		"docker": {
+			"image": "centos-redis",
+			"network": "HOST"
+	      }
+    },
+	"cpus": 1,
+	"mem": 1024,
+	"instances": 1,
+	"ports": [20000]
+}
