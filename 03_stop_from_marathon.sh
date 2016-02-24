@@ -6,6 +6,7 @@
 
 # This script will delete redis app from cluster
 
+echo "Give http://<IP> of the Marathon server"
 read MASTER
 APP="redis.marathon"
 

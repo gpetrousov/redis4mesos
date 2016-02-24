@@ -5,7 +5,9 @@
 # DATE: 27/01/2016
 
 
+echo "Give http://<IP> of the Marathon server"
 read MASTER
+echo "Give number of instances "
 read INSTANCES
 
 if [ -z "$MASTER" ]; then

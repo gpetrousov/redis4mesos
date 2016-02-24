@@ -6,7 +6,7 @@
 
 # This script will launch a new redis task on mesos cluster.
 
-
+echo "Give http://<IP> of the Marathon server"
 read MASTER
 JSON=`pwd`/files/redis_marathon.json
 
