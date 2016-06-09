@@ -4,14 +4,18 @@ Standalone Redis Docker container to deploy on Mesos cluster with Marathon and r
 On container deployment, a bootstrap shell script is executed and wraps the redis server script. Base operating system is **Centos**. 
 This project was featured on Redis weekly http://redisweekly.com/archive/129.html
 
-## Why another Redis container???
-
-Searching the web, I could not find a single solution which would just build and deploy a Redis container and would **work**. I needed a container which I could deploy on a multi-node Mesos cluster and route with HAproxy. If this is what you need, then you have found your salvation.
-
 ## Quickstart
 
 To quickly deploy the container on your Mesos or DC/OS cluster, run the deploy.sh script
 
+## Why another Redis container???
+
+Searching the web, I could not find a single solution which would just build and deploy a Redis container and would **work**. I needed a container which I could deploy on a multi-node Mesos cluster and route with HAproxy. If this is what you need, then you have found your salvation.
+
+
+## Docker hub
+
+https://hub.docker.com/r/gpetr/redis4mesos/
 
 ## Usage 
 
