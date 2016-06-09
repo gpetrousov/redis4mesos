@@ -10,9 +10,6 @@ MAINTAINER Ioannis Petrousov
 
 
 #STANDARD
-RUN yum -y update #update the system.
-RUN yum -y install git #install git
-RUN yum -y install screen #That's how we roll in the Shire
 RUN yum -y install wget
 RUN yum -y install net-tools.x86_64
 

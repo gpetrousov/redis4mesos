@@ -6,7 +6,8 @@
 	"container": {
 		"type": "DOCKER",
 		"docker": {
-			"image": "centos-redis",
+			"image": "gpetr/redis4mesos",
+            "forcePullImage": true,
 			"network": "HOST"
 	      }
     },

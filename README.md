@@ -8,6 +8,11 @@ This project was featured on Redis weekly http://redisweekly.com/archive/129.htm
 
 Searching the web, I could not find a single solution which would just build and deploy a Redis container and would **work**. I needed a container which I could deploy on a multi-node Mesos cluster and route with HAproxy. If this is what you need, then you have found your salvation.
 
+## Quickstart
+
+To quickly deploy the container on your Mesos or DC/OS cluster, run the deploy.sh script
+
+
 ## Usage 
 
 - I have created a few scripts to simplify the build and deployment of the image.
@@ -15,13 +20,13 @@ If you have a single box without in-house registry, executing the following scri
 
 1. Build the image
 
-        00_build_image.sh
+        build.sh
 
 2. Deploy on cluster
 
-        01_deploy_on_mesos.sh
+        deploy.sh
 
-- If you have an in-house registry and many slave nodes, make sure that they know where to find the image you have built.
+- If you have an in-house registry, change the 'image' instruction in files/redis_marthon.json to point to your internal registry.
 
 
 ## Networking
